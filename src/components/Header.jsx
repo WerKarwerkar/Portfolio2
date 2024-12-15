@@ -9,17 +9,16 @@ const Header = () => {
 
   const handleLinkClick = (e, id) => {
     e.preventDefault();
-    const section = document.querySelector(id); // Znajdź sekcję po ID
+    const section = document.querySelector(id);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" }); // Płynne przewijanie
+      section.scrollIntoView({ behavior: "smooth" });
     }
-    setIsOpen(false); // Zamyka menu
+    setIsOpen(false);
   };
 
   return (
     <header className="top-0 w-full text-secondary z-20 pt-4 bg-transparent">
       <nav className="container mx-auto flex justify-end items-center">
-        {/* Hamburger Icon */}
         <div className="md:hidden">
           <button
             onClick={toggleMenu}
@@ -34,7 +33,6 @@ const Header = () => {
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                {/* Ikona X */}
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -50,7 +48,6 @@ const Header = () => {
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                {/* Ikona hamburger */}
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -62,7 +59,6 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Menu Desktop */}
         <ul className="hidden md:flex space-x-6 font-light">
           <li>
             <a
@@ -115,7 +111,6 @@ const Header = () => {
         </ul>
       </nav>
 
-      {/* Menu Mobile */}
       {isOpen && (
         <div className="fixed top-0 left-0 w-full h-1/3 bg-secondary text-dark flex flex-col items-center justify-center text-lg leading-[2.5] z-50 shadow-lg">
           <button
@@ -129,7 +124,6 @@ const Header = () => {
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
-              {/* Ikona X */}
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"

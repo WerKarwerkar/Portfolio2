@@ -18,7 +18,6 @@ const Home = () => {
         <h2 className="text-2xl font-extralight mb-8">Frontend Developer</h2>
       </section>
 
-      {/* Maksymalna przerwa na telefonach */}
       <section
         id="about"
         className="min-h-screen bg-transparent p-8 mb-96 sm:mb-0"
@@ -26,7 +25,6 @@ const Home = () => {
         <About />
       </section>
 
-      {/* Maksymalna przerwa na telefonach */}
       <section
         id="projects"
         className="min-h-screen bg-transparent p-8 mb-96 sm:mb-0"
@@ -34,7 +32,6 @@ const Home = () => {
         <Projects />
       </section>
 
-      {/* Mniejsza przerwa na telefonach między Education a Opinions */}
       <section
         id="education"
         className="min-h-screen bg-transparent p-8 mb-8 sm:mb-64 md:mb-72"
